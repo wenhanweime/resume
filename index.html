@@ -6,26 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>魏文翰 · 简历</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap"
     rel="stylesheet">
   <style>
     :root {
-      /* —— 字号系统：严格 5 级 —— */
-      --fs-name: 21px;     /* 姓名（唯一最大） */
-      --fs-company: 12px;  /* 公司名 */
-      --fs-title: 11px;    /* 区块标题（大写橙色） */
-      --fs-body: 10px;     /* 所有正文，项目名/学校名靠 bold 区分 */
-      --fs-meta: 8.5px;    /* 日期 / 标签 / 英文 / 指标 / 技能 */
+      /* —— 字号系统：pt 单位，严格 5 级（达到市场标准）—— */
+      --fs-name: 20pt;     /* 姓名 */
+      --fs-company: 12pt;  /* 公司名 */
+      --fs-title: 11pt;    /* 区块标题 */
+      --fs-body: 10.5pt;   /* 正文（五号基线） */
+      --fs-meta: 9pt;      /* 日期 / 标签 / 英文 / 指标 */
 
-      /* —— 颜色：克制，橙色仅作点缀 —— */
       --ink: #1c1917;
       --ink-2: #44403c;
       --ink-3: #78716c;
       --ink-muted: #a8a29e;
       --accent: #c4622d;
-      --accent-soft: #f7ede7;
       --border: #e7e5e4;
-      --border-soft: #f0eeec;
       --paper: #ffffff;
       --bg: #f4f3f2;
     }
@@ -40,26 +37,27 @@
       background: var(--bg);
       font-family: 'Noto Sans SC', system-ui, sans-serif;
       color: var(--ink-2);
-      line-height: 1.5;
       font-size: var(--fs-body);
+      line-height: 1.4;
       -webkit-font-smoothing: antialiased;
-      padding: 24px 0;
+      padding: 20px 0;
     }
 
     .page {
-      width: 794px;
+      width: 210mm;
+      min-height: 297mm;
       margin: 0 auto;
       background: var(--paper);
       box-shadow: 0 12px 40px rgba(28, 25, 23, 0.10);
     }
 
     .top-bar {
-      height: 3px;
+      height: 3pt;
       background: var(--accent);
     }
 
     .inner {
-      padding: 34px 52px 40px;
+      padding: 13mm 15mm 12mm;
     }
 
     /* ---------- header ---------- */
@@ -67,7 +65,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      padding-bottom: 15px;
+      padding-bottom: 9pt;
       border-bottom: 1px solid var(--border);
     }
 
@@ -83,15 +81,15 @@
       font-family: 'DM Mono', monospace;
       font-size: var(--fs-meta);
       color: var(--ink-muted);
-      letter-spacing: 0.16em;
+      letter-spacing: 0.13em;
       text-transform: uppercase;
-      margin-top: 7px;
+      margin-top: 5pt;
     }
 
     .contact-info {
       display: flex;
       flex-direction: column;
-      gap: 3px;
+      gap: 2pt;
       text-align: right;
     }
 
@@ -99,7 +97,6 @@
       font-family: 'DM Mono', monospace;
       font-size: var(--fs-meta);
       color: var(--ink-3);
-      letter-spacing: 0.02em;
     }
 
     .contact-item a {
@@ -109,11 +106,11 @@
 
     /* ---------- summary ---------- */
     .summary {
-      margin-top: 15px;
-      padding: 9px 0 9px 13px;
-      border-left: 2px solid var(--accent);
+      margin-top: 11pt;
+      padding: 2pt 0 2pt 11pt;
+      border-left: 2pt solid var(--accent);
       font-size: var(--fs-body);
-      line-height: 1.6;
+      line-height: 1.55;
       color: var(--ink-2);
     }
 
@@ -124,31 +121,34 @@
 
     /* ---------- section ---------- */
     .section {
-      margin-top: 19px;
+      margin-top: 13pt;
     }
 
     .section-title {
       font-size: var(--fs-title);
       font-weight: 700;
-      letter-spacing: 0.22em;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--accent);
-      margin-bottom: 11px;
-      padding-bottom: 5px;
+      margin-bottom: 7pt;
+      padding-bottom: 3pt;
       border-bottom: 1px solid var(--border);
     }
 
     /* ---------- company / project ---------- */
     .company {
-      margin-bottom: 15px;
+      margin-bottom: 10pt;
+    }
+
+    .company:last-child {
+      margin-bottom: 0;
     }
 
     .company-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      gap: 10px;
-      margin-bottom: 1px;
+      gap: 10pt;
     }
 
     .company-name {
@@ -165,14 +165,14 @@
     }
 
     .company-role {
-      font-size: var(--fs-body);
+      font-size: var(--fs-meta);
       color: var(--ink-3);
-      margin-bottom: 9px;
+      margin: 1pt 0 7pt;
     }
 
     .project {
-      margin-bottom: 10px;
-      padding-left: 13px;
+      margin-bottom: 7pt;
+      padding-left: 10pt;
       border-left: 1px solid var(--border);
       page-break-inside: avoid;
     }
@@ -185,8 +185,8 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      gap: 10px;
-      margin-bottom: 4px;
+      gap: 10pt;
+      margin-bottom: 3pt;
     }
 
     .pj-name {
@@ -197,8 +197,7 @@
 
     .pj-name .star {
       color: var(--accent);
-      font-weight: 700;
-      margin-left: 5px;
+      margin-left: 4pt;
     }
 
     .project-date {
@@ -213,15 +212,15 @@
       font-size: var(--fs-body);
       color: var(--ink-3);
       font-style: italic;
-      margin-bottom: 5px;
-      line-height: 1.45;
+      margin-bottom: 4pt;
+      line-height: 1.4;
     }
 
     .sub-title {
       font-size: var(--fs-body);
       font-weight: 600;
       color: var(--ink-2);
-      margin: 7px 0 3px;
+      margin: 6pt 0 2pt;
     }
 
     .bullet-list {
@@ -232,19 +231,19 @@
     .bullet-list li {
       font-size: var(--fs-body);
       color: var(--ink-2);
-      margin-bottom: 3px;
-      padding-left: 13px;
+      margin-bottom: 2pt;
+      padding-left: 12pt;
       position: relative;
-      line-height: 1.5;
+      line-height: 1.4;
     }
 
     .bullet-list li::before {
       content: '';
       position: absolute;
-      left: 2px;
-      top: 7.5px;
-      width: 3px;
-      height: 3px;
+      left: 2pt;
+      top: 7.5pt;
+      width: 2.5pt;
+      height: 2.5pt;
       border-radius: 50%;
       background: var(--ink-muted);
     }
@@ -254,7 +253,6 @@
       font-weight: 600;
     }
 
-    /* 指标：橙色加粗文字，无底色 */
     .metric {
       font-family: 'DM Mono', monospace;
       font-size: var(--fs-meta);
@@ -263,25 +261,23 @@
       white-space: nowrap;
     }
 
-    /* ---------- 独立产品卡 ---------- */
-    .indie-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
+    /* ---------- 独立产品（单栏列表）---------- */
+    .indie-item {
+      margin-bottom: 6pt;
+      padding-left: 10pt;
+      border-left: 1px solid var(--border);
     }
 
-    .indie-card {
-      padding: 10px 12px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      page-break-inside: avoid;
+    .indie-item:last-child {
+      margin-bottom: 0;
     }
 
     .indie-head {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      gap: 8px;
+      gap: 10pt;
+      margin-bottom: 1pt;
     }
 
     .indie-name {
@@ -290,44 +286,33 @@
       color: var(--ink);
     }
 
+    .indie-name .role {
+      font-weight: 400;
+      color: var(--ink-3);
+    }
+
     .indie-link {
       font-family: 'DM Mono', monospace;
       font-size: var(--fs-meta);
       color: var(--accent);
       text-decoration: none;
       white-space: nowrap;
-    }
-
-    .indie-role {
-      font-size: var(--fs-meta);
-      color: var(--ink-3);
-      margin: 2px 0 5px;
+      flex-shrink: 0;
     }
 
     .indie-desc {
       font-size: var(--fs-body);
       color: var(--ink-2);
-      line-height: 1.45;
+      line-height: 1.4;
     }
 
-    .indie-wide {
-      grid-column: 1 / -1;
-    }
-
-    /* ---------- 两栏紧凑区 ---------- */
-    .two-col {
-      display: grid;
-      grid-template-columns: 1.15fr 1fr;
-      gap: 26px;
-      align-items: start;
-    }
-
+    /* ---------- 教育 ---------- */
     .edu-row {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      gap: 10px;
-      margin-bottom: 5px;
+      gap: 10pt;
+      margin-bottom: 4pt;
     }
 
     .edu-school {
@@ -342,7 +327,7 @@
 
     .edu-meta {
       display: flex;
-      gap: 10px;
+      gap: 10pt;
       white-space: nowrap;
       flex-shrink: 0;
       font-family: 'DM Mono', monospace;
@@ -357,70 +342,67 @@
       color: var(--ink-muted);
     }
 
+    /* ---------- 列表项（科研/影响力）---------- */
     .award-item {
       font-size: var(--fs-body);
       color: var(--ink-2);
-      margin-bottom: 4px;
-      padding-left: 13px;
+      margin-bottom: 3pt;
+      padding-left: 12pt;
       position: relative;
-      line-height: 1.45;
+      line-height: 1.4;
     }
 
     .award-item::before {
       content: '';
       position: absolute;
-      left: 2px;
-      top: 7px;
-      width: 3px;
-      height: 3px;
+      left: 2pt;
+      top: 7pt;
+      width: 2.5pt;
+      height: 2.5pt;
       border-radius: 50%;
       background: var(--ink-muted);
     }
 
+    /* ---------- 技能 ---------- */
     .skill-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px;
+      gap: 6pt;
+      margin-bottom: 6pt;
     }
 
     .skill-tag {
       font-size: var(--fs-meta);
       color: var(--ink-2);
-      padding: 2px 9px;
-      border-radius: 3px;
+      padding: 2pt 9pt;
+      border-radius: 3pt;
       border: 1px solid var(--border);
     }
 
-    .misc-item {
-      display: flex;
-      gap: 9px;
-      margin-bottom: 4px;
+    .misc-line {
       font-size: var(--fs-body);
-    }
-
-    .misc-label {
-      font-family: 'DM Mono', monospace;
-      font-size: var(--fs-meta);
-      color: var(--ink-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      min-width: 30px;
-      padding-top: 1px;
-    }
-
-    .misc-val {
       color: var(--ink-2);
     }
 
+    .misc-line .label {
+      color: var(--ink-muted);
+      margin-right: 4pt;
+    }
+
+    .misc-sep {
+      color: var(--ink-muted);
+      margin: 0 8pt;
+    }
+
     .page-footer {
-      margin-top: 22px;
+      margin-top: 14pt;
       text-align: center;
-      padding-top: 11px;
+      padding-top: 8pt;
       border-top: 1px solid var(--border);
       font-family: 'DM Mono', monospace;
       font-size: var(--fs-meta);
       color: var(--ink-muted);
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
     }
 
     @page {
@@ -435,18 +417,13 @@
       }
 
       .page {
-        width: 210mm;
         box-shadow: none;
-      }
-
-      .inner {
-        padding: 13mm 14mm 11mm;
       }
 
       .company-header,
       .project,
-      .indie-card,
-      .two-col {
+      .indie-item,
+      .edu-row {
         page-break-inside: avoid;
       }
 
@@ -462,7 +439,6 @@
     <div class="top-bar"></div>
     <div class="inner">
 
-      <!-- ===== HEADER ===== -->
       <header class="header">
         <div>
           <div class="name">魏文翰</div>
@@ -474,17 +450,15 @@
         </div>
       </header>
 
-      <!-- ===== SUMMARY ===== -->
       <div class="summary">
         <strong>AI Agent 方向产品经理</strong>，近 5 年大厂经历。主导美团旗舰 AI 助手「小美」的 Agent 策略架构、多 Agent 协作与搜索 Agent，并负责电商搜索的 Agent
         化升级。擅长 Agent 决策链路、主-子 Agent 协同与评估体系，能独立做出 Agent 产品。北京大学硕士，5 项发明专利（含 AI 智能体方向）、2 篇 SCI 一作。
       </div>
 
-      <!-- ===== 工作经历 ===== -->
+      <!-- 工作经历 -->
       <section class="section">
         <div class="section-title">工作经历</div>
 
-        <!-- 电商 -->
         <div class="company">
           <div class="company-header">
             <div class="company-name">电商平台</div>
@@ -493,9 +467,7 @@
           <div class="company-role">AI 搜索 Agent · 产品经理</div>
 
           <div class="project">
-            <div class="project-title">
-              <span class="pj-name">搜索 Agent 架构升级</span>
-            </div>
+            <div class="project-title"><span class="pj-name">搜索 Agent 架构升级</span></div>
             <ul class="bullet-list">
               <li>主导搜索结果页 <strong>Agent 化升级</strong>，将 query 意图理解、生成链路与工具调用整合为可编排的搜索 Agent，覆盖清单、榜单、百科、攻略等多类意图</li>
               <li>按意图匹配差异化生成链路与工具调用，提升结果相关性与搜索主动 UV</li>
@@ -504,27 +476,22 @@
           </div>
 
           <div class="project">
-            <div class="project-title">
-              <span class="pj-name">导购 Agent 与交互体验</span>
-            </div>
+            <div class="project-title"><span class="pj-name">导购 Agent 与交互体验</span></div>
             <ul class="bullet-list">
               <li>设计实时意图判断，由 Agent 动态触发智能商品卡片，PCTR 超过同位置功能卡，LT7 持续增长</li>
-              <li>独立构建<strong>素材优化 Agent</strong>，自迭代 Prompt 闭环（数据构造 → 评估 → 反馈），搜索 GMV <span class="metric">+1%</span></li>
-              <li>推进 AI 生图 Agent 落地主图场景，AI 素材个性化 GMV <span class="metric">+1%</span></li>
+              <li>独立构建<strong>素材优化 Agent</strong>，自迭代 Prompt 闭环（数据构造 → 评估 → 反馈），带动搜索 GMV 正向收益</li>
+              <li>推进 AI 生图 Agent 落地主图场景，建立质量标准与上线机制，提升 AI 素材个性化转化</li>
             </ul>
           </div>
 
           <div class="project">
-            <div class="project-title">
-              <span class="pj-name">团队 Agent 工具体系</span>
-            </div>
+            <div class="project-title"><span class="pj-name">团队 Agent 工具体系</span></div>
             <ul class="bullet-list">
-              <li>上线 3 款内部 Agent 工具，月活 <span class="metric">100+</span> 人，覆盖内容生产、素材/Prompt 优化、工单处理等 PM 核心场景</li>
+              <li>设计并上线 3 款内部 Agent 工具，月活用户 <span class="metric">100+</span>，覆盖内容生产、素材 / Prompt 优化、工单处理等 PM 核心场景</li>
             </ul>
           </div>
         </div>
 
-        <!-- 美团 -->
         <div class="company">
           <div class="company-header">
             <div class="company-name">美团</div>
@@ -540,9 +507,9 @@
             <div class="job-intro">美团 2025 AI 战略核心项目，覆盖全业务线的 Native AI 助手，为用户提供个性化生活决策 Agent。</div>
             <div class="sub-title">主 Agent 策略与决策链路</div>
             <ul class="bullet-list">
-              <li>参与<strong>主 Agent 决策链路框架设计</strong>，以思维链数据构造与 prompt 优化提升规划与推理，解决复杂多步骤任务编排</li>
+              <li>参与<strong>主 Agent 决策链路框架设计</strong>，以思维链数据构造与 prompt 优化提升规划与推理能力，解决复杂多步骤任务编排</li>
               <li>建立 Agent 端到端及各模块（意图 / 规划 / 调用 / 表达）评估体系，关键指标达成率提升至 <span class="metric">80%+</span></li>
-              <li>多轮对话的意图理解与规划准确率显著提升（相对约 <span class="metric">+100%</span>）</li>
+              <li>通过 prompt 与参数调优，显著提升多轮对话的意图理解与规划准确率</li>
             </ul>
             <div class="sub-title">多 Agent 协作与搜索 Agent</div>
             <ul class="bullet-list">
@@ -574,8 +541,8 @@
               <span class="project-date">2023.10 — 2025.03</span>
             </div>
             <ul class="bullet-list">
-              <li>从 0-1 建设外卖内容推荐社区，以大模型驱动内容生产（<span class="metric">3000万+/天</span>）与智能话题运营，推全后 AU <span class="metric">50w+</span></li>
-              <li>以「AIGC 撬动 UGC」增长飞轮迭代推荐策略，2024 全年 DAU <span class="metric">+135%</span>、点击率 <span class="metric">+150%+</span></li>
+              <li>从 0-1 建设外卖内容推荐社区，以大模型驱动内容生产与智能话题运营，推全后 AU <span class="metric">50w+</span></li>
+              <li>以「AIGC 撬动 UGC」增长飞轮迭代推荐策略，2024 全年 DAU <span class="metric">+135%</span>、7 日留存 <span class="metric">10% → 25%</span></li>
             </ul>
           </div>
 
@@ -585,8 +552,8 @@
               <span class="project-date">2023.08 — 2024.02</span>
             </div>
             <ul class="bullet-list">
-              <li>以角色模仿、卖点提示等 prompt 策略优化对话式推荐表达，用户跳出率降低 <span class="metric">43%</span></li>
-              <li>优化基于 RAG 的召排逻辑与业务规则，点击率 <span class="metric">AB +23%</span>；推荐卡片容器设计 <span class="metric">AB +6%</span></li>
+              <li>以角色模仿、卖点提示等 prompt 策略优化对话式推荐表达，推荐结果用户跳出率降低 <span class="metric">43%</span></li>
+              <li>优化基于 RAG 的召排逻辑与业务规则，点击率 <span class="metric">AB +23%</span></li>
             </ul>
           </div>
 
@@ -596,98 +563,85 @@
               <span class="project-date">2021.08 — 2023.07</span>
             </div>
             <ul class="bullet-list">
-              <li>负责无人机软硬件产品体验优化与迭代，围绕地面配送协同、用户使用流程持续完善功能</li>
+              <li>负责无人机软硬件产品体验优化与迭代升级，围绕地面配送协同、用户使用流程持续完善功能</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- ===== 独立 Agent 产品 ===== -->
+      <!-- 独立 Agent 产品 -->
       <section class="section">
         <div class="section-title">独立 Agent 产品</div>
-        <div class="indie-grid">
-          <div class="indie-card">
-            <div class="indie-head">
-              <span class="indie-name">Rentkoa</span>
-              <a class="indie-link" href="https://www.rentkoa.xyz/" target="_blank">rentkoa.xyz ↗</a>
-            </div>
-            <div class="indie-role">Agent KOL 平台 · 独立开发上线 · 注册 100+</div>
-            <div class="indie-desc">面向内容创作者的 Agent / 数字分身平台，让每个 KOL 拥有可对话、可代运营的专属 Agent。</div>
+        <div class="indie-item">
+          <div class="indie-head">
+            <span class="indie-name">Rentkoa <span class="role">· Agent KOL 平台 · 独立开发上线 · 注册 100+</span></span>
+            <a class="indie-link" href="https://www.rentkoa.xyz/" target="_blank">rentkoa.xyz ↗</a>
           </div>
-          <div class="indie-card">
-            <div class="indie-head">
-              <span class="indie-name">Starsay</span>
-              <span class="indie-link">iOS App</span>
-            </div>
-            <div class="indie-role">对话式心理疗愈 Agent · 独立开发</div>
-            <div class="indie-desc">抽卡仪式感 × 对话 Agent 的自我觉察 iOS 产品，独立完成产品设计、App 开发与对话策略。</div>
+          <div class="indie-desc">面向内容创作者的 Agent / 数字分身平台，让每个 KOL 拥有可对话、可代运营的专属 Agent。</div>
+        </div>
+        <div class="indie-item">
+          <div class="indie-head">
+            <span class="indie-name">Starsay <span class="role">· 对话式心理疗愈 Agent · 独立开发（iOS）</span></span>
           </div>
-          <div class="indie-card indie-wide">
-            <div class="indie-head">
-              <span class="indie-name">Elys / Second Me · Agent 产品增长</span>
-              <span class="indie-link">累计获客 120+</span>
-            </div>
-            <div class="indie-desc">参与两款 Agent 产品的增长营销，负责内容与渠道操盘，累计获客超 120 人。</div>
+          <div class="indie-desc">抽卡仪式感 × 对话 Agent 的自我觉察 iOS 产品，独立完成产品设计、App 开发与对话策略。</div>
+        </div>
+        <div class="indie-item">
+          <div class="indie-head">
+            <span class="indie-name">Elys / Second Me <span class="role">· Agent 产品增长 · 累计获客 120+</span></span>
           </div>
+          <div class="indie-desc">参与两款 Agent 产品的增长营销，负责内容与渠道操盘，累计获客超 120 人。</div>
         </div>
       </section>
 
-      <!-- ===== 教育 + 科研 ===== -->
+      <!-- 教育 -->
       <section class="section">
-        <div class="two-col">
-          <div>
-            <div class="section-title">教育经历</div>
-            <div class="edu-row">
-              <div class="edu-school"><strong>北京大学</strong> · 时空智能与智慧城市（硕士）</div>
-              <div class="edu-meta"><span class="edu-gpa">3.69/4 · Top 10%</span><span class="edu-date">2018—2021</span></div>
-            </div>
-            <div class="edu-row">
-              <div class="edu-school"><strong>苏黎世大学</strong> · 地理学 &amp; 数据科学（交换）</div>
-              <div class="edu-meta"><span class="edu-gpa">5.52/6</span><span class="edu-date">2020</span></div>
-            </div>
-            <div class="edu-row">
-              <div class="edu-school"><strong>华南理工大学</strong> · 城乡规划（本科）</div>
-              <div class="edu-meta"><span class="edu-gpa">3.73/4 · Top 10%</span><span class="edu-date">2013—2018</span></div>
-            </div>
-          </div>
-          <div>
-            <div class="section-title">科研与荣誉</div>
-            <div class="award-item">5 项发明专利（含 2 项 AI 智能体 / Agent 方向）</div>
-            <div class="award-item">SCI 论文 2 篇：《Cities》一作、《ERPH》三作</div>
-            <div class="award-item">北大冠昊奖学金一等奖、国家奖学金等 4 项</div>
-            <div class="award-item">北大优秀毕业生、北大 / 华工三好学生</div>
-          </div>
+        <div class="section-title">教育经历</div>
+        <div class="edu-row">
+          <div class="edu-school"><strong>北京大学</strong> · 时空智能与智慧城市（硕士）</div>
+          <div class="edu-meta"><span class="edu-gpa">GPA 3.69/4 · Top 10%</span><span class="edu-date">2018 — 2021</span></div>
+        </div>
+        <div class="edu-row">
+          <div class="edu-school"><strong>苏黎世大学</strong> · 地理学 &amp; 数据科学（交换）</div>
+          <div class="edu-meta"><span class="edu-gpa">GPA 5.52/6</span><span class="edu-date">2020</span></div>
+        </div>
+        <div class="edu-row">
+          <div class="edu-school"><strong>华南理工大学</strong> · 城乡规划（本科）</div>
+          <div class="edu-meta"><span class="edu-gpa">GPA 3.73/4 · Top 10%</span><span class="edu-date">2013 — 2018</span></div>
         </div>
       </section>
 
-      <!-- ===== 影响力 + 技能 ===== -->
+      <!-- 科研与荣誉 -->
       <section class="section">
-        <div class="two-col">
-          <div>
-            <div class="section-title">内容与影响力</div>
-            <ul class="bullet-list">
-              <li>AI 资讯自媒体 PandorAI，小红书粉丝 <span class="metric">3k+</span>、获赞 <span class="metric">1.7w+</span></li>
-              <li>少数派专栏作者、人人都是产品经理，单篇阅读量 <span class="metric">5w+</span></li>
-              <li>滑板垂类账号获赞 <span class="metric">170w+</span>、粉丝 <span class="metric">3w+</span>，垂类前 1%</li>
-            </ul>
-          </div>
-          <div>
-            <div class="section-title">技能与其他</div>
-            <div class="skill-tags">
-              <span class="skill-tag">Agent 策略</span>
-              <span class="skill-tag">多 Agent 协作</span>
-              <span class="skill-tag">Agent 评估</span>
-              <span class="skill-tag">Prompt Engineering</span>
-              <span class="skill-tag">工具调用</span>
-              <span class="skill-tag">RAG</span>
-              <span class="skill-tag">对话系统</span>
-              <span class="skill-tag">Python</span>
-            </div>
-            <div style="margin-top:9px;">
-              <div class="misc-item"><span class="misc-label">语言</span><span class="misc-val">雅思 7 分，可作为工作语言</span></div>
-              <div class="misc-item"><span class="misc-label">兴趣</span><span class="misc-val">滑板 · 滑雪</span></div>
-            </div>
-          </div>
+        <div class="section-title">科研与荣誉</div>
+        <div class="award-item">5 项发明专利（含 2 项 AI 智能体 / Agent 方向）；SCI 论文 2 篇：《Cities》第一作者、《ERPH》第三作者</div>
+        <div class="award-item">北京大学「冠昊奖学金」一等奖、国家奖学金等 4 项；北京大学优秀毕业生、北京大学 / 华南理工大学三好学生</div>
+      </section>
+
+      <!-- 内容与影响力 -->
+      <section class="section">
+        <div class="section-title">内容与影响力</div>
+        <div class="award-item">AI 资讯自媒体 PandorAI（小红书粉丝 <span class="metric">3k+</span>、获赞 <span class="metric">1.7w+</span>）；少数派、人人都是产品经理专栏作者，单篇阅读量 <span class="metric">5w+</span></div>
+        <div class="award-item">运营滑板垂类账号，获赞 <span class="metric">170w+</span>、粉丝 <span class="metric">3w+</span>，垂类账号前 1%</div>
+      </section>
+
+      <!-- 技能 -->
+      <section class="section">
+        <div class="section-title">技能与其他</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Agent 策略</span>
+          <span class="skill-tag">多 Agent 协作</span>
+          <span class="skill-tag">Agent 评估</span>
+          <span class="skill-tag">Prompt Engineering</span>
+          <span class="skill-tag">工具调用 / Function Calling</span>
+          <span class="skill-tag">RAG</span>
+          <span class="skill-tag">对话系统</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">A/B 实验</span>
+        </div>
+        <div class="misc-line">
+          <span class="label">语言</span>雅思 7 分，可作为工作语言
+          <span class="misc-sep">|</span>
+          <span class="label">兴趣</span>滑板 · 滑雪
         </div>
       </section>
 
