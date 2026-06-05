@@ -210,6 +210,13 @@
       flex-shrink: 0;
     }
 
+    .sub-title {
+      font-size: var(--fs-body);
+      font-weight: 600;
+      color: var(--ink-2);
+      margin: 6pt 0 2pt;
+    }
+
     .bullet-list {
       list-style: none;
       padding: 0;
@@ -459,7 +466,7 @@
       <header class="header">
         <div>
           <div class="name">魏文翰</div>
-          <div class="name-en">Wei Wenhan · AI Agent · Product Manager</div>
+          <div class="name-en">Wei Wenhan · AI Search &amp; Agent · Product Manager</div>
         </div>
         <div class="contact-info">
           <div class="contact-item"><a href="mailto:wenhanwei.me@gmail.com">wenhanwei.me@gmail.com</a></div>
@@ -468,8 +475,9 @@
       </header>
 
       <div class="summary">
-        <strong>AI Agent / 搜索推荐 / 导购方向产品经理</strong>，具备本地生活、电商导购、AI 搜索、AI 内容生成、推荐策略、对话式 Agent 等多类 To C 产品经验。在美团从 0-1 参与 AI 产品演进（外卖
-        Chatbot → AI 搜索 → 内容生成与推荐 → 本地生活 Agent「小美」），现负责电商导购 Agent，围绕购物决策链路设计搜索、浏览、对话、意图推荐等多场景 AI 导购产品。对 Agent 的<strong>记忆机制、任务规划、技能沉淀与上下文管理</strong>有较深理解；本人亦为 AI Agent 高频用户，长期用 Claude Code / Codex 完成需求管理、方案撰写与个人项目开发。
+        <strong>AI 搜索 / Agent 方向产品经理</strong>。在美团从 0-1 完整参与 AI 产品演进——外卖 AI Chatbot → AI 搜索 → AI 内容生成与推荐 → 本地生活 Agent「小美」，现负责电商
+        AI 搜索与对话式 Agent。长期关注 <strong>AI Native 产品、通用 Agent 与个人助理 / 生产力工具</strong>，对 Agent 的<strong>记忆机制、任务规划、技能沉淀与上下文管理</strong>有较深理解。本人亦为 AI Agent
+        重度用户，长期用 Claude Code / Codex 完成需求管理、方案撰写与个人项目开发。
       </div>
 
       <!-- 教育（前置）-->
@@ -495,38 +503,46 @@
 
         <div class="company">
           <div class="company-header">
-            <div class="company-name">电商平台 · 导购 Agent</div>
+            <div class="company-name">电商平台 · AI 搜索 / Agent</div>
             <div class="company-tenure">2025.05 — 至今</div>
           </div>
-          <div class="company-role">导购 Agent 产品经理</div>
-          <div class="job-intro">围绕电商购物决策链路，将导购 Agent 定位为「导购员」，按购物阶段（探索 → 决策 → 转化 → 复杂任务）设计 AI Overview、浏览流意图推荐、对话式导购等多形态产品，探索 AI 在成熟电商业务的价值创造。</div>
-
-          <div class="project">
-            <div class="project-title"><span class="pj-name">AI Overview · 搜索结果页智能摘要</span></div>
-            <ul class="bullet-list">
-              <li>面向知识 / 攻略 / 榜单 / 百科类 query（如「露营帐篷怎么买」），生成清单、攻略、关键筛选项与商品入口，嵌入可点击小蓝词引导用户继续决策</li>
-              <li>核心衡量 Overview / 小蓝词 / 筛选项点击率与整页转化；<strong>限定复杂 query 场景下，整页转化已优于传统搜索结果页</strong></li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <div class="project-title"><span class="pj-name">浏览流内实时导购 · 意图推荐</span></div>
-            <ul class="bullet-list">
-              <li>面向用户「逛」的场景，结合端上智能识别浏览行为与潜在意图，以低打扰方式在信息流内实时插入意图 / 导购卡片，引导意图收敛与转移</li>
-              <li>将 AI 导购从「用户主动提问」扩展到「系统理解浏览行为、主动辅助」；服饰等强心智行业 <strong>7 日留存约 <span class="metric">20%</span></strong>，卡片点击率优于同位置商品卡</li>
-            </ul>
-          </div>
+          <div class="company-role">产品经理</div>
+          <div class="job-intro">围绕电商购物决策链路做 AI 搜索与对话式 Agent，将 AI 导购定位为「导购员」，覆盖对话式 Agent、搜索结果页 AI 生成、浏览流实时意图、团队效能 Agent 等多个方向。</div>
 
           <div class="project">
             <div class="project-title"><span class="pj-name">对话式导购 Agent</span></div>
             <ul class="bullet-list">
-              <li>面向任务型诉求（旅行采购、系列搭配），通过多轮对话澄清预算 / 偏好 / 场景并构建商品解决方案，引导进入转化</li>
-              <li>基于数据判断：当前场景下对话式导购价值低于浏览流主动导购（明确任务型需求占比偏低），<strong>据此推动资源向高价值场景倾斜</strong></li>
+              <li>负责对话式导购 Agent 产品设计，面向旅行采购、系列搭配、复杂选购等任务型诉求，通过多轮对话澄清预算 / 偏好 / 场景 / 风格，构建完整商品解决方案并引导下单</li>
+              <li>设计「需求澄清 → 信息搜集 → 商品推荐 → 决策辅助」对话闭环，基于用户反馈持续迭代推荐结果</li>
+              <li>通过对话轮次、任务承接率、转化链路等数据，判断对话式 Agent 与浏览流主动导购的价值边界，推动资源向高价值场景倾斜</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-title"><span class="pj-name">搜索结果页 AI Overview</span></div>
+            <ul class="bullet-list">
+              <li>面向知识 / 攻略 / 榜单 / 百科类 query（如「露营帐篷怎么买」），设计 Overview 式 AI 信息聚合，生成清单、攻略、关键筛选项与商品入口，嵌入可点击小蓝词引导决策</li>
+              <li>核心衡量 Overview / 小蓝词 / 筛选项点击率与整页转化；限定复杂 query 场景下，整页转化已优于传统搜索结果页</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-title"><span class="pj-name">浏览流实时意图 Agent</span></div>
+            <ul class="bullet-list">
+              <li>面向用户「逛」的场景，结合端上智能识别浏览行为与潜在意图，以低打扰方式在信息流内实时插入意图 / 导购卡片，引导意图收敛与转移</li>
+              <li>将 AI 导购从「用户主动提问」扩展到「系统理解浏览行为、主动辅助」；服饰等强心智行业 7 日留存约 <span class="metric">20%</span>，卡片点击率优于同位置商品卡</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-title"><span class="pj-name">团队内部 Agent · AI 效能工具</span></div>
+            <ul class="bullet-list">
+              <li>设计并落地多款内部 Agent 工具，月活用户 <span class="metric">100+</span>，覆盖内容生产、素材 / Prompt 优化、工单处理等 PM 核心工作流</li>
             </ul>
           </div>
 
           <div class="insight">
-            <strong>阶段判断：</strong>成熟电商业务有大流量优势，但 AI 当前更多是「业务增强」而非 AI Native 新价值；电商决策链路比本地生活更复杂，AI 在信息组织与决策辅助上发挥空间更大，需嵌入搜索 / 推荐 / 内容 / 对话多入口逐步验证。
+            <strong>阶段判断：</strong>成熟电商业务有大流量优势，但 AI 当前更多是「业务增强」而非 AI Native 新价值；电商决策链路比本地生活更复杂，AI 在信息组织与决策辅助上发挥空间更大，需嵌入搜索 / 推荐 / 内容 / 对话多入口逐步验证。真正高天花板的产品可能更偏 AI Native，随模型能力持续成长。
           </div>
         </div>
 
@@ -535,7 +551,7 @@
             <div class="company-name">美团</div>
             <div class="company-tenure">2021.08 — 2025.05 · 3 年 9 个月</div>
           </div>
-          <div class="company-role">AI 产品经理 / 策略产品经理</div>
+          <div class="company-role">产品经理</div>
           <div class="job-intro">校招加入，由策略产品转向 AI 产品，完整参与美团 To C AI 从 0-1 探索到本地生活 Agent 的演进：外卖 AI Chatbot → AI 搜索 → AI 内容生成与推荐 → 本地生活 Agent「小美」。</div>
 
           <div class="project">
@@ -543,9 +559,21 @@
               <span class="pj-name">本地生活 Agent「小美」· 主 Agent 策略 &amp; 搜索 Agent<span class="star">★</span></span>
               <span class="project-date">2024.12 — 2025.05</span>
             </div>
+            <div class="sub-title">主 Agent 策略与决策链路</div>
             <ul class="bullet-list">
-              <li>参与<strong>主 Agent 决策链路策略设计</strong>，建立端到端及各模块（意图 / 规划 / 调用 / 表达）评估体系，关键指标达成率提升至 <span class="metric">80%+</span></li>
-              <li>主导<strong>搜索 Agent 与主 Agent 协作框架</strong>，定义信息传递协议与协同决策；设计「一步澄清 + 引导追问 + 多解备选」对话策略，提升任务完成率</li>
+              <li>参与<strong>主 Agent 决策链路策略设计</strong>，定义思维链数据构造与 prompt 优化方向，攻克复杂多步骤任务的规划与编排</li>
+              <li>建立 Agent 端到端及各模块（意图 / 规划 / 调用 / 表达）评估体系，关键指标达成率提升至 <span class="metric">80%+</span></li>
+              <li>主导多轮对话策略调优，显著提升意图理解与规划准确率</li>
+            </ul>
+            <div class="sub-title">多 Agent 协作与搜索 Agent</div>
+            <ul class="bullet-list">
+              <li>主导<strong>搜索 Agent 与主 Agent 协作框架</strong>，定义信息传递协议与调用逻辑，实现主-子 Agent 协同决策</li>
+              <li>重构搜索 Agent 意图理解，融合行为 / 位置 / 时间多维上下文，高质量结果率提升 <span class="metric">40%+</span></li>
+              <li>主导外卖 / 到店餐饮垂类知识库建设，增强 Agent 领域专业回答</li>
+            </ul>
+            <div class="sub-title">Agent 对话策略</div>
+            <ul class="bullet-list">
+              <li>设计「一步澄清 + 引导追问 + 多解备选」对话策略与可解释推理展示，提升任务完成率、降低跳出</li>
             </ul>
           </div>
 
@@ -562,11 +590,11 @@
 
           <div class="project">
             <div class="project-title">
-              <span class="pj-name">外卖 AIGC 内容社区 · 0-1 负责人</span>
+              <span class="pj-name">外卖 AIGC 内容社区</span>
               <span class="project-date">2023.10 — 2025.03</span>
             </div>
             <ul class="bullet-list">
-              <li>从 <strong>0-1 主导</strong>外卖内容推荐社区，以大模型驱动内容生产与智能话题运营，推全后 AU <span class="metric">50w+</span></li>
+              <li>从 <strong>0-1 建设</strong>外卖内容推荐社区，以大模型驱动内容生产与智能话题运营，推全后 AU <span class="metric">50w+</span></li>
               <li>设计「AIGC 撬动 UGC」增长飞轮并迭代推荐策略，2024 全年 DAU <span class="metric">+135%</span>、7 日留存 <span class="metric">10% → 25%</span></li>
             </ul>
           </div>
@@ -584,7 +612,7 @@
 
           <div class="project">
             <div class="project-title">
-              <span class="pj-name">无人机业务部 · 策略产品经理</span>
+              <span class="pj-name">无人机业务 · 策略产品</span>
               <span class="project-date">2021.08 — 2023.07</span>
             </div>
             <ul class="bullet-list">
@@ -636,6 +664,7 @@
       <section class="section">
         <div class="section-title">技能与其他</div>
         <div class="skill-tags">
+          <span class="skill-tag">AI 搜索</span>
           <span class="skill-tag">Agent 策略</span>
           <span class="skill-tag">多 Agent 协作</span>
           <span class="skill-tag">Agent 评估</span>
@@ -643,7 +672,6 @@
           <span class="skill-tag">工具调用 / Function Calling</span>
           <span class="skill-tag">任务流编排</span>
           <span class="skill-tag">RAG</span>
-          <span class="skill-tag">搜索 / 推荐策略</span>
           <span class="skill-tag">全栈开发</span>
           <span class="skill-tag">A/B 实验</span>
         </div>
